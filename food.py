@@ -4,17 +4,15 @@ class FoodGenerator:
         self.y = y
 
 
-    def generate (self, FOOD_RATE, FOOD_LIFE):
-        for i in FOOD_RATE:
-
-
+    def generate (self, x, y, lifetime):
+        return Food(x, y, lifetime)
 
 
 class Food:
-    def __init__ (self, x, y, FOOD_LIFE):
+    def __init__ (self, x, y, lifetime):
         self.x = x
         self.y = y
-        self.lifetime = FOOD_LIFE
+        self.lifetime = lifetime
 
 
     def decay (self):

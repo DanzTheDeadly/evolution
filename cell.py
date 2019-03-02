@@ -2,7 +2,7 @@ import random
 from traits import traits
 
 class Cell:
-    def __init__ (self, name, x, y, energy=50, genes='00011'):
+    def __init__ (self, name, x, y, energy=50, genes=''):
         self.name = name
         self.energy = energy
         self.genes = genes
